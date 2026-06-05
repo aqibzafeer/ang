@@ -2,55 +2,49 @@
   <div class="container">
 
     <div class="contact-card">
-
       <span class="tag">Get In Touch</span>
-
       <h2>Let's Work Together</h2>
+      <p class="subtitle"> Have a project in mind or looking for a developer? I’m available for freelance work, collaborations,    and exciting opportunities. </p>
 
-      <p class="subtitle">
-        Have a project in mind or looking for a developer?
-        I’m available for freelance work, collaborations,
-        and exciting opportunities.
-      </p>
+     <!-- <div class="contact-info">
+    </div> -->
+        <form >
 
-      
-      <div class="contact-info">
+  <div class="form-group">
+    <input type="text" id="name" formControlName="name" placeholder="Your name" />
+  </div>
 
-        <a
-          [href]="'mailto:' + email()"
-          class="contact-box"
-        >
-          <span class="label">
-            Email Me
-          </span>
-
-          <span class="value">
-            {{ email() }}
-          </span>
-        </a>
-
-        <a
-          [href]="'tel:' + phone()"
-          class="contact-box"
-        >
-          <span class="label">
-            Call Me
-          </span>
-
-          <span class="value">
-            {{ phone() }}
-          </span>
-        </a>
-
-      </div>
-
-      <a
-        [href]="'mailto:' + email()"
-        class="cta-btn"
-      >
-        Start a Project →
-      </a>
-
+  <div class="form-group">
+    <div class="phone-wrapper">
+      <span class="prefix">+92</span>
+      <input type="tel" id="phone" formControlName="phone"
+        placeholder="3XX-XXXX-XXX" maxlength="12"
+      />
     </div>
+
+  </div>
+
+  <!-- Email -->
+  <div class="form-group">
+    <input type="email" id="email" formControlName="email" placeholder="your@email.com" />
+  </div>
+
+  <!-- Message -->
+  <div class="form-group full">
+    <textarea id="message" formControlName="message" placeholder="Tell me about your project..."></textarea>
+   </div>
+
+  <button type="submit" > Message →</button>
+
+  </form>
+
+  </div>
+
+
+
+
+
+
+
   </div>
 </section>

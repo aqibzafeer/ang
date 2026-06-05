@@ -15,3 +15,4 @@ export class Button {
     this.onClick.emit();
   }
 }
+

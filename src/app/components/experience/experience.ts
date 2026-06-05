@@ -42,10 +42,12 @@ export class Experience {
   ]);
 
   education = signal<Education[]>([
-    { title: 'B.S Economics', issueDate: 'Focus on Analytical Thinking and Data Management' },
-    { title: 'React JS', issueDate: 'Issued 2025' },
-    { title: 'React Native', issueDate: 'Issued 2024' },
-    { title: 'JavaScript', issueDate: 'Issued 2024' },
-    { title: 'WordPress', issueDate: 'Issued 2024' }
+    { title: 'B.S', issueDate: 'University of Gujrat || 2018-2022' },
+    { title: 'IT Specialist - JavaScript', issueDate: 'Certiport || Issued 2024' },
+    { title: 'React JS', issueDate: 'Udemy || Issued 2025' },
+    { title: 'React Native', issueDate: 'NAVTCC || Issued 2024' },
+    { title: 'WordPress - CMS', issueDate: 'Udemy || Issued 2024' },
+    { title: 'Web Development', issueDate: 'Punjab Board of Technical Skill || Issued Sep 2019' }
   ]);
 }
+

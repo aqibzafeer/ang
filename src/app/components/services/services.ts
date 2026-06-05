@@ -16,7 +16,7 @@ interface Service {
 export class Services {
   services = signal<Service[]>([
     {
-      title: 'MERN Stack Full App',
+      title: 'MERN Stack',
       description: 'Complete full-stack applications using MongoDB, Express, React, and Node.js. From API design to deployment.',
       highlights: ['Database Design (MongoDB)', 'RESTful API Development', 'Full App Deployment']
     },
@@ -26,7 +26,7 @@ export class Services {
       highlights: ['Figma to React', 'API Integration (Axios)', 'Interactive UI/UX']
     },
     {
-      title: 'WordPress Development',
+      title: 'WordPress Dev',
       description: 'Custom theme development, Elementor Pro, and Headless WordPress setups for high-performance sites.',
       highlights: ['Custom Plugins', 'WooCommerce & Stripe', 'Speed Optimization (WP Rocket)']
     },
