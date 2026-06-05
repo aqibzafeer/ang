@@ -1,0 +1,12 @@
+<section class="features">
+  <h2>Our Features</h2>
+  <div class="features-grid">
+    @for (feature of features(); track feature.title) {
+      <div class="feature-card">
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.description }}</p>
+        <app-button [label]="'Learn More'" (onClick)="onFeatureClick(feature.title)"></app-button>
+      </div>
+    }
+  </div>
+</section>

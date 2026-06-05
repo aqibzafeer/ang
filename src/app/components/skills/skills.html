@@ -1,0 +1,30 @@
+<section class="skills-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="subtitle">My Expertise</span>
+      <h2>Technical Skills</h2>
+      <p>
+        Technologies and tools I use to build modern, scalable and
+        high-performance applications.
+      </p>
+    </div>
+
+    <div class="skills-grid">
+      @for (category of skillCategories(); track category.category) {
+      <div class="skill-card">
+        <div class="card-top">
+          <h3>{{ category.category }}</h3>
+        </div>
+
+        <div class="skill-list">
+          @for (skill of category.skills; track skill) {
+          <span class="skill-pill">
+            {{ skill }}
+          </span>
+          }
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+<section class="projects">
+  <div class="container">
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+      <p>
+        A collection of projects showcasing modern UI, performance,
+        scalability, and real-world functionality.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      @for (project of projects(); track $index) {
+
+      <div class="project-card">
+
+        <!-- Optional Image Area -->
+        <div class="project-image">
+          <span>Project Preview</span>
+        </div>
+
+        <div class="project-content">
+          <div class="project-header">
+            <h3>{{ project.name }}</h3>
+          </div>
+
+          <p class="project-desc">
+            {{ project.description }}
+          </p>
+
+          <div class="tech-stack">
+            @for (tech of project.tech; track tech) {
+            <span class="tech-tag">
+              {{ tech }}
+            </span>
+            }
+          </div>
+
+          <a href="#" class="view-btn">
+            View Project →
+          </a>
+        </div>
+      </div>
+
+      }
+    </div>
+  </div>
+</section>

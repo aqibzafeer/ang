@@ -1,0 +1,57 @@
+.portfolio-hero {
+  padding: 120px 20px 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.portfolio-hero .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.portfolio-hero h1 {
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.portfolio-hero .subtitle {
+  font-size: 24px;
+  opacity: 0.95;
+  margin-bottom: 20px;
+}
+
+.portfolio-hero .bio {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.secondary-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: #667eea;
+}

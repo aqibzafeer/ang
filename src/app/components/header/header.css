@@ -1,0 +1,40 @@
+.header {
+  background: #1f2937;
+  color: white;
+  padding: 16px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+.active {
+  color: #60a5fa;
+  font-weight: bold;
+}

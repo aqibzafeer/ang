@@ -1,0 +1,11 @@
+<section class="portfolio-hero">
+  <div class="container">
+    <p class="subtitle">{{ title() }}</p>
+    <h1>Hi, I'm {{ name() }}</h1>
+    <p class="bio">{{ bio() }}</p>
+    <div class="cta-buttons">
+      <app-button [label]="'Hire Me'" (onClick)="handleHire()"></app-button>
+      <a href="#portfolio" class="secondary-btn">View Work</a>
+    </div>
+  </div>
+</section>

@@ -3,11 +3,11 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": "3610af22-cbae-4d95-85de-a5a5755e46be"
+    "analytics": "3fb3b518-0b7a-4f3d-87d9-178d1ec25779"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "ANG": {
+    "angular1": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ANG:build:production"
+              "buildTarget": "angular1:build:production"
             },
             "development": {
-              "buildTarget": "ANG:build:development"
+              "buildTarget": "angular1:build:development"
             }
           },
           "defaultConfiguration": "development"

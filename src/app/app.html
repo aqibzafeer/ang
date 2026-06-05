@@ -1,14 +1,7 @@
+<app-header></app-header>
 
-<div class="maintenance-container">
-  <div class="maintenance-card">
-    <h1>Scheduled Maintenance</h1>
-    <p> We're currently performing system upgrades and improvements.</p>
-    <p> Our services will be available again shortly. </p>
-    <p class="support"> Thank you for your patience and understanding.</p>
-    <button (click)="refreshPage()"> Check Again </button>
-  </div>
-</div>
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
 
-
-
-<router-outlet />
+<app-footer></app-footer>

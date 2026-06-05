@@ -1,0 +1,32 @@
+<section class="services">
+  <div class="container">
+    <div class="section-header">
+      <h2>My Services</h2>
+      <p class="subtitle"> Creating modern, scalable, and high-performing web applications </p>
+    </div>
+
+    <div class="services-grid">
+      @for (service of services(); track service.title) {
+
+      <div class="service-card">
+        <div class="card-number">
+          0{{$index + 1}}
+        </div>
+
+        <h3>{{ service.title }}</h3>
+
+        <p class="service-desc">
+          {{ service.description }}
+        </p>
+
+        <ul class="highlights">
+          @for (item of service.highlights; track item) {
+          <li>{{ item }}</li>
+          }
+        </ul>
+      </div>
+
+      }
+    </div>
+  </div>
+</section>

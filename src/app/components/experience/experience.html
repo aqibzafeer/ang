@@ -1,0 +1,33 @@
+<section class="experience">
+  <div class="container">
+    <div class="experience-grid">
+      <div class="experience-column">
+        <h2>Experience</h2>
+        <div class="timeline">
+          @for (job of jobs(); track job.company; let last = $last) {
+            <div class="timeline-item" [class.last]="last">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>{{ job.title }}</h3>
+                <p class="company">{{ job.company }}</p>
+                <p class="period">{{ job.period }}</p>
+                <p class="description">{{ job.description }}</p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+      <div class="education-column">
+        <h2>Education & Certifications</h2>
+        <div class="education-list">
+          @for (edu of education(); track edu.title) {
+            <div class="education-item">
+              <h3>{{ edu.title }}</h3>
+              <p>{{ edu.issueDate }}</p>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

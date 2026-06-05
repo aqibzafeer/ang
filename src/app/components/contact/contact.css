@@ -1,0 +1,175 @@
+/* SECTION */
+.contact-section {
+  padding: 110px 20px;
+  background: linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Glow */
+.contact-section::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+  top: -120px;
+  left: -120px;
+}
+
+.contact-section::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+  bottom: -100px;
+  right: -100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* MAIN CARD */
+.contact-card {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+
+  padding: 70px 50px;
+  border-radius: 40px;
+
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+}
+
+/* TAG */
+.tag {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* TITLE */
+.contact-card h2 {
+  font-size: 54px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* SUBTITLE */
+.subtitle {
+  font-size: 18px;
+  line-height: 1.9;
+  color: rgba(255,255,255,0.88);
+  max-width: 700px;
+  margin: auto auto 45px;
+}
+
+/* CONTACT GRID */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+/* CONTACT CARD */
+.contact-box {
+  width: 280px;
+  text-decoration: none;
+
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.15);
+
+  padding: 28px;
+  border-radius: 28px;
+
+  transition: all 0.35s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.18);
+}
+
+/* TEXT */
+.label {
+  display: block;
+  color: rgba(255,255,255,0.75);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.value {
+  display: block;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* CTA BUTTON */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 18px 38px;
+  border-radius: 999px;
+
+  background: white;
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 80px 20px;
+  }
+
+  .contact-card {
+    padding: 45px 25px;
+    border-radius: 28px;
+  }
+
+  .contact-card h2 {
+    font-size: 38px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .contact-box {
+    width: 100%;
+  }
+}
