@@ -4,12 +4,12 @@ import { Projects } from '../../components/projects/projects';
 import { Skills } from '../../components/skills/skills';
 import { Experience } from '../../components/experience/experience';
 import { PortfolioHero } from '../../components/portfolio-hero/portfolio-hero';
-import { Contact } from '../../components/contact/contact';
+
 
 @Component({
   selector: 'app-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [Services, Projects, Skills, Experience, PortfolioHero, Contact],
+  imports: [Services, Projects, Skills, Experience, PortfolioHero],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

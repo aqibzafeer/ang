@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { Button } from '../button/button';
+import { Button } from '../ui/button/button';
 
 @Component({
   selector: 'app-hero',

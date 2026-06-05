@@ -1,5 +1,5 @@
 import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
-import { Button } from '../button/button';
+import { Button } from '../ui/button/button';
 
 interface Feature {
   title: string;
